@@ -1,15 +1,14 @@
 import telebot
-import rabot
-from telebot import rabot
+from telebot import types
 
 token = 'Ваш токен'
 bot = telebot.TeleBot(token)
 
 
 def create_keyboard():
-    keyboard = rabot.InlineKeyboardMarkup()
-    drink_btn = rabot.InlineKeyboardButton(text="Хочу пить", callback_data="1")
-    eat_btn = rabot.InlineKeyboardButton(text="Хочу есть", callback_data="2")
+    keyboard = types.InlineKeyboardMarkup()
+    drink_btn = types.InlineKeyboardButton(text="Хочу пить", callback_data="1")
+    eat_btn = types.InlineKeyboardButton(text="Хочу есть", callback_data="2")
     keyboard.add(drink_btn)
     keyboard.add(eat_btn)
     return keyboard
