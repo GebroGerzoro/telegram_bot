@@ -1,4 +1,5 @@
 import telebot
+import rabot
 from telebot import rabot
 
 token = 'Ваш токен'
